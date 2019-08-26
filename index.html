@@ -21,6 +21,7 @@
 		<video muted autoplay autoplay="autoplay" id="video" width="100%" height="auto" autoplay="autoplay" >
 			<source autoplay="autoplay" src="joj.mp4"></source>
 		</video>
+	<button onclick="mute(this, 'vid1')">Mute</button>
 	</div>
 <div id = "main"> 
 	<embed id="music" src="tay-k.mp3" autostart="true" hidden="true" loop="false" volume ="0.3"> </embed>
@@ -37,10 +38,21 @@
 </div>
 
 </div>
-
+	<div> <a Приветосик></a> </div>	
 </div>
 
 <script src="js/script.js"></script>
-<div> <a Приветосик></a> </div>	
+ <script>
+    function mute(btn,elem){
+    var video = document.getElementById(elem);
+    if (video.muted){
+      video.muted = false;
+      btn.innerHTML = "Mute";
+    } else{
+      video.muted = true;
+      btn.innerHTML = "Sound";
+    }
+  }
+  </script>
 </body>
 </html>
