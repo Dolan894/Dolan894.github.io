@@ -21,12 +21,15 @@
 		<video muted autoplay autoplay="autoplay" id="video" width="100%" height="auto" autoplay="autoplay" >
 			<source autoplay="autoplay" src="joj.mp4"></source>
 		</video>
-	<button onclick="mute(this, 'vid1')">Mute</button>
+
 	</div>
 <div id = "main"> 
 	<embed id="music" src="tay-k.mp3" autostart="true" hidden="true" loop="false" volume ="0.3"> </embed>
 		<div id = "NickName">
 		<h2>Dolan</h2>
+			
+			<a class="link">mute/unmute</a>
+			
 		<div id = "Social">
 		<a class="Social" href="https://vk.com/dolan322">VK </a>| 
 		<a class="Social"  href="https://steamcommunity.com/profiles/76561198354697103/">STEAM </a>| 
@@ -41,18 +44,5 @@
 	<div> <a Приветосик></a> </div>	
 </div>
 
-<script src="js/script.js"></script>
- <script>
-    function mute(btn,elem){
-    var video = document.getElementById(elem);
-    if (video.muted){
-      video.muted = false;
-      btn.innerHTML = "Mute";
-    } else{
-      video.muted = true;
-      btn.innerHTML = "Sound";
-    }
-  }
-  </script>
 </body>
 </html>
